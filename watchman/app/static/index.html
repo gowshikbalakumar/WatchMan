@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watchman Dashboard</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Watchman: Network Monitoring Dashboard</h1>
+      <section class="controls">
+        <button id="startBtn">Start Sniffing</button>
+        <button id="stopBtn">Stop Sniffing</button>
+        <input id="filterInput" placeholder="protocol==TCP and dst_port==80" />
+        <button id="refreshBtn">Refresh</button>
+      </section>
+
+      <section class="stats">
+        <div><strong>Total:</strong> <span id="totalPackets">0</span></div>
+        <div><strong>Suspicious:</strong> <span id="suspiciousPackets">0</span></div>
+      </section>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Protocol</th>
+            <th>Length</th>
+            <th>Summary</th>
+            <th>Alert</th>
+          </tr>
+        </thead>
+        <tbody id="packetBody"></tbody>
+      </table>
+    </main>
+
+    <script src="/static/js/dashboard.js"></script>
+  </body>
+</html>

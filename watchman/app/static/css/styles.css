@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input {
+  min-width: 280px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.alert {
+  color: #c62828;
+  font-weight: bold;
+}
